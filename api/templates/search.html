@@ -4,6 +4,7 @@
 		<meta name="viewport" content=""width=device-width, initial-scale="1.0">
 		<link rel="stylesheet" href="../static/css/search-style.css">
 		<link rel="stylesheet" href="../static/css/navbar.css">
+		<link rel="stylesheet" href="../static/css/chatbot.css">
 
 		<link rel="icon" href="../static/img/test 3.png">
 		<title>Search Recipe</title>
@@ -20,7 +21,7 @@
 						<li class="navmenu">
 							<a href="{{ url_for('home_page') }}" class="navmenu">Home</a>
 							<a href="{{ url_for('recommend') }}" class="navmenu">Get Recommendations</a>
-							<a href="{{ url_for('about') }}" class="navmenu">About US</a>
+							<a href="{{ url_for('about') }}" class="navmenu">About Us</a>
 						</li>
 					</ul>	
 				</div>
@@ -40,14 +41,38 @@
 		</div>
 		<script src="../static/js/autocomplete.js"></script>
 	
-		<div id="imported-content"></div>
-		<script>
-		fetch("{{ url_for('chatbot') }}")
-			.then(response => response.text())
-			.then(data => {
-			document.getElementById("imported-content").innerHTML = data;
-			});
-		</script>
+
+		<div class="container">
+		<div class="chatbox">
+			<div class="chatbox__support">
+				<div class="chatbox__header">
+					<div class="chatbox__image--header">
+						<img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+					</div>
+					<div class="chatbox__content--header">
+						<h4 class="chatbox__heading--header">Chat support</h4>
+						<p class="chatbox__description--header">Hi. My name is CookSmart. How can I help you?</p>
+					</div>
+				</div>
+				<div class="chatbox__messages">
+					<div></div>
+				</div>
+				<div class="chatbox__footer">
+					<input type="text" placeholder="Write a message...">
+					<button class="chatbox__send--footer send__button">Send</button>
+				</div>
+			</div>
+			<div class="chatbox__button">
+				<button><img src="../static/img/chatbot.png" /></button>
+			</div>
+		</div>
+		</div>
+
+	<script>    
+		$SCRIPT_ROOT = {{ request.script_root|tojson }};
+	</script>
+	<script type="text/javascript" src="../static/js/app.js"></script>
+
 	</main>
 
 	</body>
