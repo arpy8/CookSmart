@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About US</title>
+  <link rel="stylesheet" href="../static/css/about.css">
+  <link rel="stylesheet" href="../static/css/navbar.css">
+
+  <link rel="icon" href="../static/img/test 3.png">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="navbar">
+        <ul class="navitems">
+          <li><a href="{{ url_for('home_page') }}"><img src="../static/img/test 4.png" alt="CookSmart" id="logo"></a>
+          </li>
+          <li class="navmenu">
+            <a href="{{ url_for('home_page') }}" class="navmenu">Home</a>
+            <a href="{{ url_for('search') }}" class="navmenu">Search Recipe</a>
+            <a href="{{ url_for('recommend') }}" class="navmenu">Get Recommendations</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="main" style="padding: 0 120px 0 120px ;">
+      <h1 style="text-align: center;  padding-top: 50px; color: ffffff89;">Welcome to CookSmart !</h1>
+      <h5 style="text-align: center; color: #00000090;">where Every Ingredient Counts & Every Recipe Shines</h5>
+      <br>
+      <br>
+      <p class="Heading">At CookSmart, we believe that cooking should be a delightful and stress-free experience, no
+        matter your level of culinary expertise. Our mission is to simplify the cooking process and ignite your culinary
+        creativity by providing you with the perfect recipes tailored to the ingredients you have on hand.</p>
+      <br>
+      <br>
+      <hr>
+      <h2 style="padding: 40px 0px 0 40px; text-align: center;">How CookSmart Works</h2></br>
+      <ol>
+        <li>
+          <h4>Your Ingredients :</h4> CookSmart puts the power in your hands. Begin your culinary adventure by choosing
+          the ingredients you have in your kitchen. Whether it's the fresh produce you bought from the market, pantry
+          staples, or leftovers waiting to be transformed, CookSmart will help you make the most of what you have.
+        </li><br>
+        <li>
+          <h4>Show Me the Recipes :</h4>Once you've selected your ingredients, CookSmart's intelligent algorithm will
+          instantly generate a curated list of mouthwatering recipes that match your selection. Our vast database
+          includes a wide range of cuisines and dietary preferences, ensuring there's something for everyone.
+        </li></br>
+        <li>
+          <h4>Click to Explore :</h4> on any recipe that catches your eye to dive deeper. You'll find detailed
+          instructions, ingredient lists, cooking tips, and user reviews. Explore the culinary world from the comfort of
+          your kitchen and create restaurant-quality dishes right at home.
+        </li></br>
+      </ol>
+      <hr>
+      <h2 style="padding: 40px 0px 0 40px; text-align: center;">Why CookSmart</h2></br>
+      <ol>
+        <li>
+          <h4>Efficiency :</h4>Say goodbye to wasted ingredients and last-minute grocery store trips. CookSmart helps
+          you make the most of what's already in your kitchen.
+        </li></br>
+        <li>
+          <h4>Inspiration :</h4>Discover new and exciting recipes that you might have never thought of. Let CookSmart
+          spark your creativity and elevate your cooking skills.
+        </li></br>
+        <li>
+          <h4>Variety :</h4>With a vast something to satisfy every palate. Whether you're a vegetarian, a meat lover, or
+          have specific dietary needs like gluten-free or keto, CookSmart has you covered.
+        </li></br>
+        <li>
+          <h4>Community :</h4>Join a thriving community of home cooks and food enthusiasts. Share your own culinary
+          creations, rate recipes, and connect with like-minded individuals who share your passion for cooking.
+        </li></br>
+        <li>
+          <h4>Always Fresh :</h4>Our recipe database is constantly updated with new and trending dishes, ensuring you
+          have access to the latest culinary trends and seasonal favourites.
+        </li></br>
+        <li>
+          <h4>Smart Suggestions :</h4>As you use CookSmart more, our intelligent algorithm learns your preferences and
+          suggests recipes tailored to your taste, making your cooking experience even more personalized.
+        </li></br>
+      </ol>
+      <hr>
+      <h2 style="padding: 40px 0px 0 40px; text-align: center;">Meet our Team</h2></br>
+      <div class="team-members" style="text-align: center;">
+        <div class="team-member" style="display: inline-block;  width: 220px;">
+          <a href="https://www.linkedin.com/in/aryan-raj-91b399250/" target="_blank"><img src="../static/img/team/aryan.jpg" alt="Aryaan Raj" class="team-member-img" height="225px"></a>
+          <p class="team-member-name"><b>Aryan Raj</b></p>
+          <p class="team-member-role">Project Manager</p>
+        </div>  
+        <div class="team-member" style="display: inline-block; width: 220px;">
+          <a href="https://www.linkedin.com/in/aditya-routh/"><img src="../static/img/team/aditya.jpg" alt="Aditya Routh" class="team-member-img"  height="225px"></a>
+          <p class="team-member-name"><b>Aditya Routh</b></p>
+          <p class="team-member-role">Backend Developer</p>
+        </div>
+        <div class="team-member" style="display: inline-block;  width: 220px;">
+          <a href="https://www.linkedin.com/in/pritam-agrawal-24894b251/"><img src="../static/img/team/pritam.jpg" alt="Pritam Agrawal" class="team-member-img"  height="225px"></a>
+          <p class="team-member-name"><b>Pritam Agrawal</b></p>
+          <p class="team-member-role">UI/UX Designer</p>
+        </div>
+        <div class="team-member" style="display: inline-block;  width: 220px;">
+          <a href="https://www.linkedin.com/in/sounak-dutta-459599250/"><img src="../static/img/team/download.jpg" alt="Sounak Dutta" class="team-member-img"  height="225px"></a>
+          <p class="team-member-name"><b>Sounak Dutta</b></p>
+          <p class="team-member-role">Frontend Developer</p>
+        </div>
+        <div class="team-member" style="display: inline-block;  width: 220px;">
+          <a href="https://www.linkedin.com/in/ritam-goswami-17653b251/"><img src="../static/img/team/download.jpg" alt="Ritam Goswami" class="team-member-img"  height="225px"></a>
+          <p class="team-member-name"><b>Ritam Goswami</b></p>
+          <p class="team-member-role">Database Administrator</p>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div id="imported-content"></div>
+    <script>
+      fetch("{{ url_for('chatbot') }}")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("imported-content").innerHTML = data;
+        });
+    </script>
+
+  </main>
+
+
+
+</body>
+
+</html>

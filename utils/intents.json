@@ -1,0 +1,74 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "tip1",
+      "patterns": ["tell me a cooking tip|give me a cooking tip|share a cooking tip"],
+      "responses":["Sure! Here's a tip: Always use fresh ingredients for the best flavor in your dishes."]
+    },
+     
+    {
+       "tag":"tip2",
+        "patterns":["best way to store fresh herbs"],
+        "responses": ["Fresh herbs can be stored in a glass of water in the refrigerator, or you can freeze them in olive oil in an ice cube tray."]
+      },
+    {
+       "tag":"tip3",
+        "patterns":["how to prevent overcooking vegetables"],
+        "responses": ["Blanch vegetables in boiling water for a short time, then immediately transfer them to an ice bath to stop the cooking process."]
+      },
+    {
+       "tag":"tip4",
+        "patterns":["secret to making a perfect omelet"],
+        "responses": ["Use a non-stick pan, cook over medium-low heat, and fold the omelet in half when it's mostly set. Add fillings before folding."]
+        
+      },
+    {
+       "tag":"tip5",
+        "patterns":["method for making homemade pizza dough"],
+        "responses": ["Combine flour, yeast, warm water, sugar, and salt, and knead the dough until elastic. Let it rise, then roll it out for pizza."]
+      },
+    {
+       "tag":"tip6",
+        "patterns":["best way to cook rice without a rice cooker"],
+        "responses": ["For perfect rice, use a 2:1 water-to-rice ratio, bring it to a boil, then reduce to a simmer, cover, and cook for 18-20 minutes."]
+      },
+    {
+       "tag":"tip7",
+        "patterns":["difference between baking soda and baking powder"],
+        "responses": ["Sautéing is cooking food quickly in a small amount of oil, while pan-frying involves more oil and a longer cooking time, often with breading."]
+      }
+    
+    
+  ]
+}

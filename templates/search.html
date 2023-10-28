@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+	<meta>
+		<meta name="viewport" content=""width=device-width, initial-scale="1.0">
+		<link rel="stylesheet" href="../static/css/search-style.css">
+		<link rel="stylesheet" href="../static/css/navbar.css">
+
+		<link rel="icon" href="../static/img/test 3.png">
+		<title>Search Recipe</title>
+
+		<script src="https://kit.fontawesome.com/e3f0543f14.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+
+		<header>
+			<nav>
+				<div class="navbar">
+					<ul class="navitems">
+						<li><a href="{{ url_for('home_page') }}"><img src="../static/img/test 4.png" alt="CookSmart" id="logo"></a></li>
+						<li class="navmenu">
+							<a href="{{ url_for('home_page') }}" class="navmenu">Home</a>
+							<a href="{{ url_for('recommend') }}" class="navmenu">Get Recommendations</a>
+							<a href="{{ url_for('about') }}" class="navmenu">About US</a>
+						</li>
+					</ul>	
+				</div>
+			</nav>
+		</header>
+
+	<main>
+	
+		<div class="search-box">
+			<div class="row">
+				<input type="text" id="input-box" placeholder= "Search Anything" autocomplete="off">
+				<button><i class="fa-solid fa-magnifying-glass"></i></button>
+			</div>
+			<div class="result-box">
+			
+			</div>
+		</div>
+		<script src="../static/js/autocomplete.js"></script>
+	
+		<div id="imported-content"></div>
+		<script>
+		fetch("{{ url_for('chatbot') }}")
+			.then(response => response.text())
+			.then(data => {
+			document.getElementById("imported-content").innerHTML = data;
+			});
+		</script>
+	</main>
+
+	</body>
+</HTML>

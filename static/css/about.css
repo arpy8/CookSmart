@@ -1,0 +1,46 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+  overflow-x: hidden;
+}
+html{
+	background-image: url(../img/Background-6.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;	
+}
+
+.main{
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  margin: 5%;
+  border-radius: 5px;
+} 
+
+#Heading{
+  text-align: center;
+}
+h3{
+  margin-left: 40px;
+}
+#head{
+  margin-left: 60px;
+}
+h4{
+  display: inline;
+}
+.Heading{
+  margin-left: 40px;
+}
+ol{
+  margin-left: 60px;
+}
+ul{
+  margin-left: 60px;
+}

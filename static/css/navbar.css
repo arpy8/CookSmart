@@ -1,0 +1,36 @@
+.navbar{
+	background-color: rgba(136, 136, 136, 0.34);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  margin-left: 3%;
+  margin-right: 3%;
+
+  height: 50px; 
+  overflow: visible; 
+  margin-top: 50px; 
+  border-radius: 5px;
+}
+
+.navitems{
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	list-style: none;	
+  position: relative; top: -72px;
+}
+
+.navmenu{
+	margin-top: 55px;
+  margin-right: 20px ;
+  font-size: 25px;
+}
+a.navmenu{
+	text-decoration: none;
+	color: azure;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+#logo{
+  padding-top: 3px;
+  height: 130px;
+}

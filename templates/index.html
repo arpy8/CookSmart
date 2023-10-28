@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="../static/css/styles.css">
+<link rel="stylesheet" href="../static/css/navbar.css">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="navbar" style="height: 50px; overflow: visible; margin-top: 50px; border-radius: 5px;">
+                <ul class="navitems">
+                    <li><a href="{{ url_for('home_page') }}"><img src="../static/img/test 4.png" alt="CookSmart" id="logo"></a></li>
+                    <li class="navmenu">
+                        <a href="{{ url_for('home_page') }}" class="navmenu">Home</a>
+                        <a href="{{ url_for('about') }}" class="navmenu">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+    <div class="main">
+        <h1 class="bodyhead" style="">Start Exploring</h1>
+        <div class="meinbuttons">
+        <a href="{{ url_for('search') }}"><button class="btn btn2">Search Recipies</button></a>
+        <a href="{{ url_for('recommend') }}"><button class="btn btn2">Get Recommendations</button></a>
+    </div>
+    </main>
+
+    <!-- <iframe src="{{ url_for('chatbot') }}" width="700" height="300" style="background-color: none;" allowtransparency = "true"></iframe> -->
+
+    <div id="imported-content"></div>
+    <script>
+    fetch("C:\Users\arpit\Desktop\aryan\templates\chatbot.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("imported-content").innerHTML = data;
+        });
+    </script>
+
+
+</body>
+</html>
